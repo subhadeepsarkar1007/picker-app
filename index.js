@@ -54,7 +54,7 @@ function countdown() {
     setTimeout(countdown, 100);
   } else {
     if(iteration == 1)
-    winners = [{ id: 33, value: "navel piercing" }];
+    winners = [{ id: 32, value: "navel piercing" }];
     else
     document.getElementById("winners").innerHTML = `<ul>${winners
       .map((e) => `<li>${e.value}</li>`)
