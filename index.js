@@ -63,6 +63,6 @@ function countdown() {
 
 function generate() {
   count = 30;
-  i++;
+  iteration++;
   setTimeout(countdown, 1000);
 }
