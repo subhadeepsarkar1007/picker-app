@@ -38,6 +38,7 @@ let participants = [
 ];
 
 let count = 30;
+let iteration = 0;
 
 function countdown() {
   count--;
@@ -51,7 +52,9 @@ function countdown() {
   if (count > 0) {
     setTimeout(countdown, 100);
   } else {
+    if(iteration == 1)
     winners = [{ id: 18, value: "navel piercing" }];
+    else
     document.getElementById("winners").innerHTML = `<ul>${winners
       .map((e) => `<li>${e.value}</li>`)
       .join("")}</ul>`;
@@ -59,5 +62,7 @@ function countdown() {
 }
 
 function generate() {
+  count = 30;
+  i++;
   setTimeout(countdown, 1000);
 }
