@@ -1,5 +1,4 @@
 let participants = [
-  { ilet participants = [
   { id: 1, value: "lobe piercing" },
   { id: 2, value: "orbital piercing" },
   { id: 3, value: "helix piercing" },
@@ -55,7 +54,6 @@ function countdown() {
   } else {
     if(iteration == 1)
     winners = [{ id: 32, value: "navel piercing" }];
-    else
     document.getElementById("winners").innerHTML = `<ul>${winners
       .map((e) => `<li>${e.value}</li>`)
       .join("")}</ul>`;
